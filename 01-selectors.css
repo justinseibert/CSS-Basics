@@ -1,0 +1,52 @@
+/*
+
+  CSS Basics
+  Free to use under the MIT license.
+  http://www.opensource.org/licenses/mit-license.php
+
+  This section is a "block comment"
+  It is used to to add notes and documentation to your code
+  Anything that is written between the [slash-asterisk] and
+  [asterisk-slash] pairs is ignored by a browser.
+
+*/
+
+/* comments can also happen on a single line */
+
+/*
+  -----------------------------------------------------------------
+
+  Lesson 1: Using SELECTORS to create RULES
+
+  -----------------------------------------------------------------
+
+  --A CSS RULE sets styles for a SELECTOR using one or more
+    DECLARATION contained in a DECLARATION BLOCK denoted by
+    curly braces {}
+  --A DECLARATION contains two things: a PROPERTY and its VALUE
+    it is written using the following syntax:
+    property: value;
+  --A SELECTOR is the item from your HTML page you wish to style.
+    There are many types of selectors. The 3 simplest forms are
+    based on HTML ELEMENTS, CLASSES and IDS
+  --ELEMENTS and CLASSES can occur multiple times in an HTML page
+    making them very useful to apply style rules to whereas IDs
+    should be considered unique and used only once.
+    If IDs are used twice or more in a page, a browser will only
+    pay attention to the last occurence.
+*/
+
+/* this RULE selects the single item with "LessonOne" ID */
+#PartOne {
+  display: block; /* displays the item as block */
+}
+
+/* this RULE selects all "p" ELEMENTS */
+p {
+  color: #FF0000 /* bright red text color */
+}
+
+/* this RULE selects all items with "blue-text" CLASS */
+.blue-text {
+  color: #0000FF; /* bright blue text color */
+}

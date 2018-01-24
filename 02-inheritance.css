@@ -1,0 +1,72 @@
+/*
+  -----------------------------------------------------------------
+
+  Lesson 2: Inheritance
+
+  -----------------------------------------------------------------
+
+  --CSS stands for Cascading Style Sheet. The key word is "cascading"
+    where rules are inherited from top to bottom in a cascade.
+  --Due to cascading, rules that occur at the bottom of a stylesheet
+    can overwrite related rules that occur higher above them. This feature
+    is designed to enforce writing more general style rules at or near the
+    top of your sheet and progressively adding more specific rules toward
+    the bottom
+  --Certain selectors can take precedence over others which will appear to
+    ignore the cascade rule. In general, an ELEMENT rule is the weakest and
+    should be considered most general. It will be overwritten by a CLASS rule,
+    which is usually the most common type of rule in a stylesheet. An ID rule
+    overwrite a CLASS rule and ELEMENT rule.
+*/
+
+/* this RULE selects the single item with "PartTwo" ID */
+/*
+  this rule takes precedence over element and class rules
+  which is why its specific <section> element gets displayed
+  even though sections are "turned off" in the main style.css
+ */
+#PartTwo {
+  display: block; /* displays the item as block */
+}
+
+/* this RULE selects all "p" ELEMENTS */
+p {
+  color: #FF0000 /* bright red text color */
+}
+
+/* this RULE selects all items with "blue-text" CLASS */
+.blue-text {
+  color: #0000FF; /* bright blue text color */
+}
+
+/* this RULE selects all items with "green-text" CLASS */
+/*
+  it is important to note that it occurs after the
+  "blue-text" rule in this stylesheet
+*/
+.green-text {
+  color: #00FF00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+b,
+strong {
+
+}

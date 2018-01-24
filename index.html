@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="01-selectors.css" type="text/css" rel="stylesheet">
+    <!-- <link href="02-inheritance.css" type="text/css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="container">
+      <section id="PartOne">
+        <h1>1: Using Selectors</h1>
+        <p>This text is written inside the <code>&lt;p&gt;</code> element. It inherits the declarations made in the <code>p</code> element rule which make it appear red.</p>
+        <p class="blue-text">This text is also written inside the <code>&lt;p&gt;</code> element, but it applies the <code>.blue-text</code> class rule and therefore it appears blue.</p>
+      </section>
+
+      <section id="PartTwo">
+        <h1>2: Style Inheritance</h1>
+        <p>This is normal text written in a <code>&lt;p&gt;</code> element without any other class or id rules applied. It appears red.</p>
+        <p class="blue-text">This text is written inside the <code>&lt;p&gt;</code> element and it applies the <code>.blue-text</code> class rule. The <code>.blue-text</code> class rule takes precedence over the <code>p</code> element rule and therefore inherits a blue color instead of red</p>
+        <p class="green-text blue-text">This text is is also written inside the <code>&lt;p&gt;</code> element and contains both <code>.blue-text</code> and <code>.green-text</code> classes. It overwrites the element rule (red), inherits the first class rule (blue) and then overwrites it with the second and final class rule (green).</p>
+        <p>Also:</p>
+      </section>
+
+      <section id="PartThree">
+        <h1>2: DOM Inheritance</h1>
+      </section>
+    </div>
+  </body>
+</html>
